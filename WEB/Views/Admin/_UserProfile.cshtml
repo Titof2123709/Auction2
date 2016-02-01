@@ -1,0 +1,66 @@
+﻿@model WEB.Models.ProfileModel
+<div id="hidethisdiv" class="modal-content">
+    <div class="modal-header">
+        <button id="hidemodal" class="close" onclick="CloseWindow()" data-dismiss="modal-content" area-hidden="true">X</button>
+
+        @if(Model!=null)
+        { 
+        <div>
+            <h4>ProfileModel</h4>
+            <hr />
+            <div class="modal-body">
+                <dl class="dl-horizontal">
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Receiver)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Receiver)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Country)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Country)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.City)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.City)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Address)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Address)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Phone)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Phone)
+                    </dd>
+
+                </dl>
+            </div>
+        </div>
+        }
+        else { <h2>Profile not found</h2> }
+
+    </div>
+</div>
+
+<script>
+    function CloseWindow() {
+        $('#modDialog').hide();
+    }
+</script>

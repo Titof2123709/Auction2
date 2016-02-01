@@ -1,0 +1,101 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+login{
+       font-family: 'Times New Roman', Times, serif; /* Шрифт с засечками */
+    font-style: italic;
+}
+   aside {
+    width: 150px;
+    float: left;
+   }
+   article {
+    margin-right: 240px;
+    display: block;
+    float:right
+   }
+
+   editforSettings
+   {
+       color:#282828;
+   }
+
+
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.alert-danger {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+}
+.alert-danger hr {
+  border-top-color: #e4b9c0;
+}
+.alert-danger .alert-link {
+  color: #843534;
+}
+
+
+    table {
+        margin: 0px 0;
+        text-align: left;
+        border-collapse: separate;
+        border: 1px solid #ddd;
+        border-spacing: 10px;
+        border-radius: 3px;
+        background: #fdfdfd;
+        font-size: 14px;
+        width: auto;
+    }
+
+    td, th {
+        border: 1px solid #ddd;
+        padding: 5px;
+        border-radius: 3px;
+    }
+
+    th {
+        background: #E4E4E4;
+    }
+
+    caption {
+        font-style: italic;
+        text-align: right;
+        color: #547901;
+        border-radius: 3px;
+        border-color: #19009a;
+    }
+
+
+    .box div {
+        overflow: hidden;
+        width: 130px;
+        white-space: nowrap;
+        display: inline-block;
+    }

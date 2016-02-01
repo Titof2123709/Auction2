@@ -1,0 +1,2 @@
+F:\С#\projects(2013)EPAM\Project\Auction2\WEB\obj\Release\WEB.csprojResolveAssemblyReference.cache
+D:\С#\projects(2013)EPAM\Project\Auction2\WEB\obj\Release\WEB.csprojResolveAssemblyReference.cache

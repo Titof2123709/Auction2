@@ -1,0 +1,6 @@
+﻿@model IEnumerable<string>
+
+@foreach (var item in Model)
+{
+    <li style="color:green">@Html.ActionLink(item, "Index", new { name = item }, new { @style = "color:green" })</li>
+}

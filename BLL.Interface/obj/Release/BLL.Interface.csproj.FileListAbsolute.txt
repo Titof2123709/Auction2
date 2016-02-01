@@ -1,0 +1,8 @@
+F:\С#\projects(2013)EPAM\Project\Auction2\BLL.Interface\bin\Release\BLL.Interface.dll
+F:\С#\projects(2013)EPAM\Project\Auction2\BLL.Interface\bin\Release\BLL.Interface.pdb
+F:\С#\projects(2013)EPAM\Project\Auction2\BLL.Interface\obj\Release\BLL.Interface.dll
+F:\С#\projects(2013)EPAM\Project\Auction2\BLL.Interface\obj\Release\BLL.Interface.pdb
+D:\С#\projects(2013)EPAM\Project\Auction2\BLL.Interface\bin\Release\BLL.Interface.dll
+D:\С#\projects(2013)EPAM\Project\Auction2\BLL.Interface\bin\Release\BLL.Interface.pdb
+D:\С#\projects(2013)EPAM\Project\Auction2\BLL.Interface\obj\Release\BLL.Interface.dll
+D:\С#\projects(2013)EPAM\Project\Auction2\BLL.Interface\obj\Release\BLL.Interface.pdb

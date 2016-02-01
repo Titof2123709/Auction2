@@ -1,0 +1,12 @@
+F:\С#\projects(2013)EPAM\Project\Auction2\DAL.Interface\bin\Debug\DAL.Interface.dll
+F:\С#\projects(2013)EPAM\Project\Auction2\DAL.Interface\bin\Debug\DAL.Interface.pdb
+F:\С#\projects(2013)EPAM\Project\Auction2\DAL.Interface\obj\Debug\DAL.Interface.dll
+F:\С#\projects(2013)EPAM\Project\Auction2\DAL.Interface\obj\Debug\DAL.Interface.pdb
+D:\С#\projects(2013)EPAM\Project\версии- Auction2\Auction2\DAL.Interface\bin\Debug\DAL.Interface.dll
+D:\С#\projects(2013)EPAM\Project\версии- Auction2\Auction2\DAL.Interface\bin\Debug\DAL.Interface.pdb
+D:\С#\projects(2013)EPAM\Project\версии- Auction2\Auction2\DAL.Interface\obj\Debug\DAL.Interface.dll
+D:\С#\projects(2013)EPAM\Project\версии- Auction2\Auction2\DAL.Interface\obj\Debug\DAL.Interface.pdb
+D:\С#\projects(2013)EPAM\Project\Auction2\DAL.Interface\bin\Debug\DAL.Interface.dll
+D:\С#\projects(2013)EPAM\Project\Auction2\DAL.Interface\bin\Debug\DAL.Interface.pdb
+D:\С#\projects(2013)EPAM\Project\Auction2\DAL.Interface\obj\Debug\DAL.Interface.dll
+D:\С#\projects(2013)EPAM\Project\Auction2\DAL.Interface\obj\Debug\DAL.Interface.pdb

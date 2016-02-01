@@ -1,0 +1,12 @@
+F:\С#\projects(2013)EPAM\Project\Auction2\BLL.Interface\bin\Debug\BLL.Interface.dll
+F:\С#\projects(2013)EPAM\Project\Auction2\BLL.Interface\bin\Debug\BLL.Interface.pdb
+F:\С#\projects(2013)EPAM\Project\Auction2\BLL.Interface\obj\Debug\BLL.Interface.dll
+F:\С#\projects(2013)EPAM\Project\Auction2\BLL.Interface\obj\Debug\BLL.Interface.pdb
+D:\С#\projects(2013)EPAM\Project\версии- Auction2\Auction2\BLL.Interface\bin\Debug\BLL.Interface.dll
+D:\С#\projects(2013)EPAM\Project\версии- Auction2\Auction2\BLL.Interface\bin\Debug\BLL.Interface.pdb
+D:\С#\projects(2013)EPAM\Project\версии- Auction2\Auction2\BLL.Interface\obj\Debug\BLL.Interface.dll
+D:\С#\projects(2013)EPAM\Project\версии- Auction2\Auction2\BLL.Interface\obj\Debug\BLL.Interface.pdb
+D:\С#\projects(2013)EPAM\Project\Auction2\BLL.Interface\bin\Debug\BLL.Interface.dll
+D:\С#\projects(2013)EPAM\Project\Auction2\BLL.Interface\bin\Debug\BLL.Interface.pdb
+D:\С#\projects(2013)EPAM\Project\Auction2\BLL.Interface\obj\Debug\BLL.Interface.dll
+D:\С#\projects(2013)EPAM\Project\Auction2\BLL.Interface\obj\Debug\BLL.Interface.pdb

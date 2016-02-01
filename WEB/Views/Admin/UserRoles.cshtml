@@ -1,0 +1,106 @@
+﻿@model WEB.Models.RoleModel
+
+<h4>Edit User Roles</h4>
+<hr style="color:black" />
+<style>
+    table {
+        margin: 0px 0;
+        text-align: left;
+        border-collapse: separate;
+        border: 1px solid #ddd;
+        border-spacing: 10px;
+        border-radius: 3px;
+        background: #fdfdfd;
+        font-size: 14px;
+        width: auto;
+    }
+
+    td, th {
+        border: 1px solid #ddd;
+        padding: 5px;
+        border-radius: 3px;
+    }
+
+    th {
+        background: #E4E4E4;
+    }
+
+    caption {
+        font-style: italic;
+        text-align: right;
+        color: #547901;
+        border-radius: 3px;
+        border-color: #19009a;
+    }
+</style>
+
+
+<div class="container-fluid" style="white-space: nowrap">
+
+
+            <div id="change" style="width:220px"></div>
+            <div id="changefail" style="width:220px"></div>
+            <div id="loadrole" style="display:none;color:red;font-size:x-large">Идет загрузка...</div>
+
+
+            <div class="col-xs-1" style="width:200px">
+
+                <div id="edittable">
+                    @Html.Action("_ShowRolesForUser", "Admin", new { Id = @ViewBag.UserId })
+                </div>
+
+                    @using (Ajax.BeginForm("AddUserRole", null, new AjaxOptions { OnFailure = "OnFailure", OnSuccess = "OnSuccess", LoadingElementId = "loadrole", UpdateTargetId = "edittable" }, new { id = "addrole" }))
+                    { }
+                        <input type="hidden" name="UserId" value="@ViewBag.UserId" form="addrole" />
+                    
+                    <table class="table table-hover table-striped">
+
+                        <caption >Add Role For User</caption>
+                        <tr>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>                      
+                                <input type="text" name="Name" form="addrole"/>
+                            </td>
+                            <td><input type="submit" name="AddRoles" form="addrole" value="Add User Role" class="btn btn-default" /></td>
+                        </tr>
+
+                    </table>
+
+                    
+
+                        @using (Ajax.BeginForm("DeleteUserRole", null, new AjaxOptions { OnFailure = "OnFailure", OnSuccess = "OnSuccess", LoadingElementId = "loadrole", UpdateTargetId = "edittable" }, new { id = "deleterole" }))
+                        { }
+                            <input type="hidden" name="UserId" value="@ViewBag.UserId" form="deleterole" />
+                        
+                        <table class="table table-hover table-striped">
+
+                            <caption>Delete Role For User</caption>
+                            <tr>
+                                <th>Name</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" name="Name" form="deleterole" />
+                                </td>
+                                <td><input type="submit" name="DeleteRoles" form="deleterole" value="Delete user role" class="btn btn-default" /></td>
+                            </tr>
+
+                        </table>
+                        
+
+
+
+                <hr style="color:black"/>
+
+
+                <h4>Edit All Roles</h4>
+                <hr style="color:black" />
+
+                            @Html.Action("AllRoles", "Admin");
+                        </div>
+
+
+    </div>

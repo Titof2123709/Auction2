@@ -1,0 +1,52 @@
+F:\С#\projects(2013)EPAM\Project\Auction2\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+F:\С#\projects(2013)EPAM\Project\Auction2\DAL\bin\Debug\DAL.dll.config
+F:\С#\projects(2013)EPAM\Project\Auction2\DAL\bin\Debug\DAL.dll
+F:\С#\projects(2013)EPAM\Project\Auction2\DAL\bin\Debug\DAL.pdb
+F:\С#\projects(2013)EPAM\Project\Auction2\DAL\bin\Debug\AutoMapper.dll
+F:\С#\projects(2013)EPAM\Project\Auction2\DAL\bin\Debug\DAL.Interface.dll
+F:\С#\projects(2013)EPAM\Project\Auction2\DAL\bin\Debug\EntityFramework.dll
+F:\С#\projects(2013)EPAM\Project\Auction2\DAL\bin\Debug\EntityFramework.SqlServer.dll
+F:\С#\projects(2013)EPAM\Project\Auction2\DAL\bin\Debug\ORM.dll
+F:\С#\projects(2013)EPAM\Project\Auction2\DAL\bin\Debug\AutoMapper.xml
+F:\С#\projects(2013)EPAM\Project\Auction2\DAL\bin\Debug\DAL.Interface.pdb
+F:\С#\projects(2013)EPAM\Project\Auction2\DAL\bin\Debug\EntityFramework.xml
+F:\С#\projects(2013)EPAM\Project\Auction2\DAL\bin\Debug\EntityFramework.SqlServer.xml
+F:\С#\projects(2013)EPAM\Project\Auction2\DAL\bin\Debug\ORM.pdb
+F:\С#\projects(2013)EPAM\Project\Auction2\DAL\obj\Debug\DAL.dll
+F:\С#\projects(2013)EPAM\Project\Auction2\DAL\obj\Debug\DAL.pdb
+D:\С#\projects(2013)EPAM\Project\версии- Auction2\Auction2\DAL\bin\Debug\DAL.dll.config
+D:\С#\projects(2013)EPAM\Project\версии- Auction2\Auction2\DAL\bin\Debug\DAL.dll
+D:\С#\projects(2013)EPAM\Project\версии- Auction2\Auction2\DAL\bin\Debug\DAL.pdb
+D:\С#\projects(2013)EPAM\Project\версии- Auction2\Auction2\DAL\bin\Debug\AutoMapper.dll
+D:\С#\projects(2013)EPAM\Project\версии- Auction2\Auction2\DAL\bin\Debug\DAL.Interface.dll
+D:\С#\projects(2013)EPAM\Project\версии- Auction2\Auction2\DAL\bin\Debug\EntityFramework.dll
+D:\С#\projects(2013)EPAM\Project\версии- Auction2\Auction2\DAL\bin\Debug\EntityFramework.Extended.dll
+D:\С#\projects(2013)EPAM\Project\версии- Auction2\Auction2\DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\С#\projects(2013)EPAM\Project\версии- Auction2\Auction2\DAL\bin\Debug\ORM.dll
+D:\С#\projects(2013)EPAM\Project\версии- Auction2\Auction2\DAL\bin\Debug\AutoMapper.xml
+D:\С#\projects(2013)EPAM\Project\версии- Auction2\Auction2\DAL\bin\Debug\DAL.Interface.pdb
+D:\С#\projects(2013)EPAM\Project\версии- Auction2\Auction2\DAL\bin\Debug\EntityFramework.xml
+D:\С#\projects(2013)EPAM\Project\версии- Auction2\Auction2\DAL\bin\Debug\EntityFramework.Extended.xml
+D:\С#\projects(2013)EPAM\Project\версии- Auction2\Auction2\DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\С#\projects(2013)EPAM\Project\версии- Auction2\Auction2\DAL\bin\Debug\ORM.pdb
+D:\С#\projects(2013)EPAM\Project\версии- Auction2\Auction2\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\С#\projects(2013)EPAM\Project\версии- Auction2\Auction2\DAL\obj\Debug\DAL.dll
+D:\С#\projects(2013)EPAM\Project\версии- Auction2\Auction2\DAL\obj\Debug\DAL.pdb
+D:\С#\projects(2013)EPAM\Project\Auction2\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\С#\projects(2013)EPAM\Project\Auction2\DAL\bin\Debug\DAL.dll.config
+D:\С#\projects(2013)EPAM\Project\Auction2\DAL\bin\Debug\DAL.dll
+D:\С#\projects(2013)EPAM\Project\Auction2\DAL\bin\Debug\DAL.pdb
+D:\С#\projects(2013)EPAM\Project\Auction2\DAL\bin\Debug\AutoMapper.dll
+D:\С#\projects(2013)EPAM\Project\Auction2\DAL\bin\Debug\DAL.Interface.dll
+D:\С#\projects(2013)EPAM\Project\Auction2\DAL\bin\Debug\EntityFramework.dll
+D:\С#\projects(2013)EPAM\Project\Auction2\DAL\bin\Debug\EntityFramework.Extended.dll
+D:\С#\projects(2013)EPAM\Project\Auction2\DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\С#\projects(2013)EPAM\Project\Auction2\DAL\bin\Debug\ORM.dll
+D:\С#\projects(2013)EPAM\Project\Auction2\DAL\bin\Debug\AutoMapper.xml
+D:\С#\projects(2013)EPAM\Project\Auction2\DAL\bin\Debug\DAL.Interface.pdb
+D:\С#\projects(2013)EPAM\Project\Auction2\DAL\bin\Debug\EntityFramework.xml
+D:\С#\projects(2013)EPAM\Project\Auction2\DAL\bin\Debug\EntityFramework.Extended.xml
+D:\С#\projects(2013)EPAM\Project\Auction2\DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\С#\projects(2013)EPAM\Project\Auction2\DAL\bin\Debug\ORM.pdb
+D:\С#\projects(2013)EPAM\Project\Auction2\DAL\obj\Debug\DAL.dll
+D:\С#\projects(2013)EPAM\Project\Auction2\DAL\obj\Debug\DAL.pdb

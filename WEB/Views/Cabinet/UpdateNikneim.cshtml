@@ -1,0 +1,42 @@
+﻿@model WEB.Models.UserModel
+@{HtmlHelper.ClientValidationEnabled = false;}
+@using (Ajax.BeginForm("UpdateNik", "Cabinet", new AjaxOptions { OnFailure = "OnFailure", OnSuccess = "OnSuccess", LoadingElementId = "loadingupdatenikneim", HttpMethod = "POST" }))
+{
+
+    <div class="form-horizontal">
+        <h4>Change nikneim</h4>
+        <hr />
+        @Html.HiddenFor(model => model.Id)
+        @Html.HiddenFor(model => model.Password)
+        <div class="form-group">
+            @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.TimeRegister, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.TimeRegister, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+
+}
+
+<div id="loadingupdatenikneim" style="display:none; color:Red; font-weight:bold;">
+    <p>Идет загрузка...</p>
+</div>

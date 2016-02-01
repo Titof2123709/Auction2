@@ -1,0 +1,76 @@
+F:\С#\projects(2013)EPAM\Project\Auction2\DependencyResolver\obj\Debug\DependencyResolver.csprojResolveAssemblyReference.cache
+F:\С#\projects(2013)EPAM\Project\Auction2\DependencyResolver\bin\Debug\DependencyResolver.dll.config
+F:\С#\projects(2013)EPAM\Project\Auction2\DependencyResolver\bin\Debug\DependencyResolver.dll
+F:\С#\projects(2013)EPAM\Project\Auction2\DependencyResolver\bin\Debug\DependencyResolver.pdb
+F:\С#\projects(2013)EPAM\Project\Auction2\DependencyResolver\bin\Debug\BLL.dll
+F:\С#\projects(2013)EPAM\Project\Auction2\DependencyResolver\bin\Debug\BLL.Interface.dll
+F:\С#\projects(2013)EPAM\Project\Auction2\DependencyResolver\bin\Debug\DAL.dll
+F:\С#\projects(2013)EPAM\Project\Auction2\DependencyResolver\bin\Debug\DAL.Interface.dll
+F:\С#\projects(2013)EPAM\Project\Auction2\DependencyResolver\bin\Debug\EntityFramework.dll
+F:\С#\projects(2013)EPAM\Project\Auction2\DependencyResolver\bin\Debug\EntityFramework.SqlServer.dll
+F:\С#\projects(2013)EPAM\Project\Auction2\DependencyResolver\bin\Debug\Ninject.dll
+F:\С#\projects(2013)EPAM\Project\Auction2\DependencyResolver\bin\Debug\ORM.dll
+F:\С#\projects(2013)EPAM\Project\Auction2\DependencyResolver\bin\Debug\AutoMapper.dll
+F:\С#\projects(2013)EPAM\Project\Auction2\DependencyResolver\bin\Debug\BLL.pdb
+F:\С#\projects(2013)EPAM\Project\Auction2\DependencyResolver\bin\Debug\BLL.Interface.pdb
+F:\С#\projects(2013)EPAM\Project\Auction2\DependencyResolver\bin\Debug\DAL.pdb
+F:\С#\projects(2013)EPAM\Project\Auction2\DependencyResolver\bin\Debug\DAL.Interface.pdb
+F:\С#\projects(2013)EPAM\Project\Auction2\DependencyResolver\bin\Debug\EntityFramework.xml
+F:\С#\projects(2013)EPAM\Project\Auction2\DependencyResolver\bin\Debug\EntityFramework.SqlServer.xml
+F:\С#\projects(2013)EPAM\Project\Auction2\DependencyResolver\bin\Debug\Ninject.xml
+F:\С#\projects(2013)EPAM\Project\Auction2\DependencyResolver\bin\Debug\ORM.pdb
+F:\С#\projects(2013)EPAM\Project\Auction2\DependencyResolver\bin\Debug\AutoMapper.xml
+F:\С#\projects(2013)EPAM\Project\Auction2\DependencyResolver\obj\Debug\DependencyResolver.dll
+F:\С#\projects(2013)EPAM\Project\Auction2\DependencyResolver\obj\Debug\DependencyResolver.pdb
+D:\С#\projects(2013)EPAM\Project\версии- Auction2\Auction2\DependencyResolver\bin\Debug\DependencyResolver.dll.config
+D:\С#\projects(2013)EPAM\Project\версии- Auction2\Auction2\DependencyResolver\bin\Debug\DependencyResolver.dll
+D:\С#\projects(2013)EPAM\Project\версии- Auction2\Auction2\DependencyResolver\bin\Debug\DependencyResolver.pdb
+D:\С#\projects(2013)EPAM\Project\версии- Auction2\Auction2\DependencyResolver\bin\Debug\BLL.dll
+D:\С#\projects(2013)EPAM\Project\версии- Auction2\Auction2\DependencyResolver\bin\Debug\BLL.Interface.dll
+D:\С#\projects(2013)EPAM\Project\версии- Auction2\Auction2\DependencyResolver\bin\Debug\DAL.dll
+D:\С#\projects(2013)EPAM\Project\версии- Auction2\Auction2\DependencyResolver\bin\Debug\DAL.Interface.dll
+D:\С#\projects(2013)EPAM\Project\версии- Auction2\Auction2\DependencyResolver\bin\Debug\EntityFramework.dll
+D:\С#\projects(2013)EPAM\Project\версии- Auction2\Auction2\DependencyResolver\bin\Debug\EntityFramework.SqlServer.dll
+D:\С#\projects(2013)EPAM\Project\версии- Auction2\Auction2\DependencyResolver\bin\Debug\Ninject.dll
+D:\С#\projects(2013)EPAM\Project\версии- Auction2\Auction2\DependencyResolver\bin\Debug\ORM.dll
+D:\С#\projects(2013)EPAM\Project\версии- Auction2\Auction2\DependencyResolver\bin\Debug\AutoMapper.dll
+D:\С#\projects(2013)EPAM\Project\версии- Auction2\Auction2\DependencyResolver\bin\Debug\EntityFramework.Extended.dll
+D:\С#\projects(2013)EPAM\Project\версии- Auction2\Auction2\DependencyResolver\bin\Debug\BLL.pdb
+D:\С#\projects(2013)EPAM\Project\версии- Auction2\Auction2\DependencyResolver\bin\Debug\BLL.Interface.pdb
+D:\С#\projects(2013)EPAM\Project\версии- Auction2\Auction2\DependencyResolver\bin\Debug\DAL.pdb
+D:\С#\projects(2013)EPAM\Project\версии- Auction2\Auction2\DependencyResolver\bin\Debug\DAL.Interface.pdb
+D:\С#\projects(2013)EPAM\Project\версии- Auction2\Auction2\DependencyResolver\bin\Debug\EntityFramework.xml
+D:\С#\projects(2013)EPAM\Project\версии- Auction2\Auction2\DependencyResolver\bin\Debug\EntityFramework.SqlServer.xml
+D:\С#\projects(2013)EPAM\Project\версии- Auction2\Auction2\DependencyResolver\bin\Debug\Ninject.xml
+D:\С#\projects(2013)EPAM\Project\версии- Auction2\Auction2\DependencyResolver\bin\Debug\ORM.pdb
+D:\С#\projects(2013)EPAM\Project\версии- Auction2\Auction2\DependencyResolver\bin\Debug\AutoMapper.xml
+D:\С#\projects(2013)EPAM\Project\версии- Auction2\Auction2\DependencyResolver\bin\Debug\EntityFramework.Extended.xml
+D:\С#\projects(2013)EPAM\Project\версии- Auction2\Auction2\DependencyResolver\obj\Debug\DependencyResolver.csprojResolveAssemblyReference.cache
+D:\С#\projects(2013)EPAM\Project\версии- Auction2\Auction2\DependencyResolver\obj\Debug\DependencyResolver.dll
+D:\С#\projects(2013)EPAM\Project\версии- Auction2\Auction2\DependencyResolver\obj\Debug\DependencyResolver.pdb
+D:\С#\projects(2013)EPAM\Project\Auction2\DependencyResolver\obj\Debug\DependencyResolver.csprojResolveAssemblyReference.cache
+D:\С#\projects(2013)EPAM\Project\Auction2\DependencyResolver\bin\Debug\DependencyResolver.dll.config
+D:\С#\projects(2013)EPAM\Project\Auction2\DependencyResolver\bin\Debug\DependencyResolver.dll
+D:\С#\projects(2013)EPAM\Project\Auction2\DependencyResolver\bin\Debug\DependencyResolver.pdb
+D:\С#\projects(2013)EPAM\Project\Auction2\DependencyResolver\bin\Debug\BLL.dll
+D:\С#\projects(2013)EPAM\Project\Auction2\DependencyResolver\bin\Debug\BLL.Interface.dll
+D:\С#\projects(2013)EPAM\Project\Auction2\DependencyResolver\bin\Debug\DAL.dll
+D:\С#\projects(2013)EPAM\Project\Auction2\DependencyResolver\bin\Debug\DAL.Interface.dll
+D:\С#\projects(2013)EPAM\Project\Auction2\DependencyResolver\bin\Debug\EntityFramework.dll
+D:\С#\projects(2013)EPAM\Project\Auction2\DependencyResolver\bin\Debug\EntityFramework.SqlServer.dll
+D:\С#\projects(2013)EPAM\Project\Auction2\DependencyResolver\bin\Debug\Ninject.dll
+D:\С#\projects(2013)EPAM\Project\Auction2\DependencyResolver\bin\Debug\ORM.dll
+D:\С#\projects(2013)EPAM\Project\Auction2\DependencyResolver\bin\Debug\AutoMapper.dll
+D:\С#\projects(2013)EPAM\Project\Auction2\DependencyResolver\bin\Debug\EntityFramework.Extended.dll
+D:\С#\projects(2013)EPAM\Project\Auction2\DependencyResolver\bin\Debug\BLL.pdb
+D:\С#\projects(2013)EPAM\Project\Auction2\DependencyResolver\bin\Debug\BLL.Interface.pdb
+D:\С#\projects(2013)EPAM\Project\Auction2\DependencyResolver\bin\Debug\DAL.pdb
+D:\С#\projects(2013)EPAM\Project\Auction2\DependencyResolver\bin\Debug\DAL.Interface.pdb
+D:\С#\projects(2013)EPAM\Project\Auction2\DependencyResolver\bin\Debug\EntityFramework.xml
+D:\С#\projects(2013)EPAM\Project\Auction2\DependencyResolver\bin\Debug\EntityFramework.SqlServer.xml
+D:\С#\projects(2013)EPAM\Project\Auction2\DependencyResolver\bin\Debug\Ninject.xml
+D:\С#\projects(2013)EPAM\Project\Auction2\DependencyResolver\bin\Debug\ORM.pdb
+D:\С#\projects(2013)EPAM\Project\Auction2\DependencyResolver\bin\Debug\AutoMapper.xml
+D:\С#\projects(2013)EPAM\Project\Auction2\DependencyResolver\bin\Debug\EntityFramework.Extended.xml
+D:\С#\projects(2013)EPAM\Project\Auction2\DependencyResolver\obj\Debug\DependencyResolver.dll
+D:\С#\projects(2013)EPAM\Project\Auction2\DependencyResolver\obj\Debug\DependencyResolver.pdb

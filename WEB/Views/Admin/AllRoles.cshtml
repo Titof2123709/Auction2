@@ -1,0 +1,66 @@
+﻿@model WEB.Models.RoleModel
+@{
+    Layout = null;
+}
+<div id="changerole" style="width:220px"></div>
+<div id="changerolefail" style="width:220px"></div>
+<div id="loadrole" style="display:none;color:red;font-size:x-large">Идет загрузка...</div>
+
+<div id ="edittablerole">
+    @Html.Action("_ShowAllRoles", "Admin")
+</div>
+
+@using (Ajax.BeginForm("AddNewRole", null, new AjaxOptions { OnFailure = "OnFailure", OnSuccess = "OnSuccess", LoadingElementId = "loadrole", UpdateTargetId = "edittablerole" }, new { id = "addnewrole" }))
+{ }
+ 
+    <table class="table table-hover table-striped">
+
+        <caption>AddRole</caption>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td><input type="text" name="Name" form="addnewrole" /></td>
+            <td><input type="text" name="Description" form="addnewrole" /></td>
+            <td><input type="submit" name="AddRoles" form="addnewrole" value="Add Role" class="btn btn-default" /></td>
+        </tr>
+
+    </table>
+
+
+
+@using (Ajax.BeginForm("DeleteFromAllRole", null, new AjaxOptions { OnFailure = "OnFailure", OnSuccess = "OnSuccess", LoadingElementId = "loadrole", UpdateTargetId = "edittablerole" }, new { id = "deletefromallrole" }))
+{ }
+
+<table class="table table-hover table-striped">
+
+    <caption>DeleteRole</caption>
+    <tr>
+        <th>Name</th>
+    </tr>
+    <tr>
+        <td><input type="text" name="Name" form="deletefromallrole" /></td>
+        <td><input type="submit" name="DeleteRoles" form="deletefromallrole" value="Delete Role" class="btn btn-default" /></td>
+    </tr>
+
+</table>
+
+
+@using (Ajax.BeginForm("UpdateRole", null, new AjaxOptions { OnFailure = "OnFailure", OnSuccess = "OnSuccess", LoadingElementId = "loadrole", UpdateTargetId = "edittablerole" }, new { id = "updaterole" }))
+{ }
+
+<table class="table table-hover table-striped">
+
+    <caption>Update Role</caption>
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td><input type="text" name="Name" form="updaterole" /></td>
+        <td><input type="text" name="Description" form="updaterole" /></td>
+        <td><input type="submit" name="AddRoles" form="updaterole" value="Update Role" class="btn btn-default" /></td>
+    </tr>
+
+</table>

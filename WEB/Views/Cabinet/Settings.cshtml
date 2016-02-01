@@ -1,0 +1,43 @@
+﻿@model WEB.Models.UserModel
+
+@{
+    ViewBag.Title = "Settings";
+}
+
+<h2>Settings</h2>
+
+
+<body>
+    <br />
+    <div class="container-fluid" style="white-space: nowrap">
+        <div class="row-fluid">
+            <div class="col-md-3">
+                <div class="well sidebar-nav col-xs-1" style="width:200px; margin-bottom:auto">
+                    <ul class="nav nav-list">
+                        <li class=" nav-header" style="font-weight:bold; color:black">Сменить Аватар</li>
+                        <!--Html.Action("GetAllCathegories", "Home")-->
+                        <!--здесь вставить смену аватара!! -->
+                    </ul>
+                </div>
+            </div>
+
+            <div style="margin-left:220px">
+                <div class="col-lg-1" style="width:200px;">
+                    <!--Body content-->
+                    <div id="change" style="width:220px"></div>
+                    <div id="changefail" style="width:240px"></div>
+                    <br />
+                    @Html.Action("UpdateNikneim","Cabinet")
+                    <br />
+                    @Html.Partial("UpdatePassword")
+                    <br />
+                     @Html.Action("UpdateProfile", "Cabinet")
+                    <br />
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+</body>
+
+<!---->

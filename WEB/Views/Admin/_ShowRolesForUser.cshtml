@@ -1,0 +1,19 @@
+﻿@model IEnumerable<WEB.Models.RoleModel>
+@{Layout = null;}
+<table class="table table-hover table-striped">
+
+    <caption>All User's Role</caption>
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+    </tr>
+    @foreach (var modell in Model)
+    {
+        <tr>
+            <td>@Html.DisplayFor(mod => modell.Name)</td>
+            <td>@Html.DisplayFor(mod => modell.Description)</td>
+        </tr>
+
+    }
+</table>
+

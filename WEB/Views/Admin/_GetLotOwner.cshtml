@@ -1,0 +1,45 @@
+﻿@model WEB.Models.UserModel
+
+<div id="hidethisdiv" class="modal-content">
+    <div class="modal-header">
+        <button id="hidemodal" class="close" onclick="CloseWindow()" data-dismiss="modal-content" area-hidden="true">X</button>
+        <div>
+            <h4>UserModel</h4>
+            <hr />
+            <div class="modal-body">
+                <dl class="dl-horizontal">
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Name)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Name)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Email)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Email)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.TimeRegister)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.TimeRegister)
+                    </dd>
+
+                </dl>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function CloseWindow() {
+        $('#modDialog').hide();
+    }
+</script>

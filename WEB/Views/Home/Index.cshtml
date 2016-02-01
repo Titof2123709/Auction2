@@ -1,0 +1,60 @@
+﻿@model PagedList.IPagedList<WEB.Models.LotModel>
+@using PagedList.Mvc;
+<!Doctype html>
+<html>
+@{
+    ViewBag.Title = "Index";
+}
+<body>
+    <br />
+    <div class="container-fluid" style="white-space: nowrap">
+        <div class="row-fluid">
+            <div class="col-md-3">
+                <div class="well sidebar-nav col-xs-1" style="width:200px; margin-bottom:auto">
+                    <ul class="nav nav-list">
+                        <li class=" nav-header" style="font-weight:bold; color:black">Категории</li>
+                        @Html.Action("GetAllCathegories", "Home")
+                    </ul>
+                </div>
+            </div>
+            <div style="margin-left:220px">
+               <h2>@ViewBag.Empty</h2>
+
+                    <!--Body content-->
+
+                    @foreach (var model in Model)
+                    {
+                        <div class="col-xs-1" style="width:200px">
+                            <br />
+                            @Html.ActionLink(model.Name, "RedirectToChat", new { model.Name })
+                            @Html.DisplayNameFor(mod => model.Name)
+                            @Html.DisplayFor(mod => model.Name)
+                            <br />
+                            @Html.DisplayNameFor(mod => model.Description)
+                            @Html.DisplayFor(mod => model.Description)
+                            <br />
+                            @Html.DisplayNameFor(mod => model.StartPrice)
+                            @Html.DisplayFor(mod => model.StartPrice)
+                            <br />
+                            @Html.DisplayNameFor(mod => model.Image)
+                            @Html.DisplayFor(mod => model.Image)
+                            <br />
+                            @Html.DisplayNameFor(mod => model.DateBegin)
+                            @Html.DisplayFor(mod => model.DateBegin)
+                            <br />
+                            @Html.DisplayNameFor(mod => model.TimeBegin)
+                            @Html.DisplayFor(mod => model.TimeBegin)
+                            <br />
+                        </div>
+                    }
+            </div>
+      
+        </div>
+
+    </div>
+    <div class="hero-unit" style="margin-left:250px">
+        @Html.PagedListPager(Model, page => Url.Action("Index", new { page, name = ViewBag.Name }))
+    </div>
+    <br />
+</body>
+</html>

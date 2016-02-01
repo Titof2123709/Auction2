@@ -1,0 +1,24 @@
+﻿@model IEnumerable<string>
+@{
+    ViewBag.Title = "BarLots";
+    Layout = null;
+}
+
+@using (Ajax.BeginForm("FindLotByNik", null, new AjaxOptions { OnFailure = "OnFailureSearch", OnSuccess = "OnSuccess", LoadingElementId = "loadtablesearch", UpdateTargetId = "tableusers" }, new { id = "searchlot" }))
+{ }
+
+<li>@Ajax.ActionLink("GetAllLots", "GetAllLots", "Admin", new AjaxOptions { OnSuccess = "OnSuccess", LoadingElementId = "loading", UpdateTargetId = "centerr", HttpMethod = "POST" }, new { @style = "color:green", @role = "button" }) </li>
+<li style="color:green">Cathegories:</li>
+<ul style="margin-left:20px;" class="nav nav-list">
+    @foreach (var cathegory in Model)
+    {
+        <li style="color:green">@Ajax.ActionLink((string)@cathegory, "GetLotsByCathegory", "Admin", new { @cathegory = cathegory }, new AjaxOptions { OnSuccess = "OnSuccess", LoadingElementId = "loading", UpdateTargetId = "centerr", HttpMethod = "POST" }, new { @style = "color:green" })</li>
+    }
+</ul>
+
+<li>User Name:</li>
+<div><input type="text" name="Nik" class="form-control" placeholder="Search By Nik" form="searchlot" style="width:130px;"/></div>
+<div><input type="submit" value="Find" form="searchlot" value="Submit" class="btn btn-default"/></div>
+<div id="loadtablesearch" class="glyphicon glyphicon-search" style="display:none;color:red;">...</div>
+
+

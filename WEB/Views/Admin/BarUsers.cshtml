@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "BarUsers";
+    Layout = null;
+}
+
+<li>@Ajax.ActionLink("GetAllUsers", "GetAllUsers", "Admin", new AjaxOptions { OnSuccess = "OnSuccess", LoadingElementId = "loading", UpdateTargetId = "centerr", HttpMethod = "POST" }, new { @style = "color:green" }) </li>
+
+        <ul style="margin-left:20px;" class="nav nav-list">
+            @foreach (var role in ViewBag.Roles)
+            {
+                <li style="color:green">@Ajax.ActionLink((string)@role, "GetUsersByRole", "Admin", new { @rol = role }, new AjaxOptions { OnSuccess = "OnSuccess", LoadingElementId = "loading", UpdateTargetId = "centerr", HttpMethod = "POST" }, new { @style = "color:green" })</li>
+            }
+        </ul>
+
