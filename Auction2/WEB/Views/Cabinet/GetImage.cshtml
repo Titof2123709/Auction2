@@ -1,0 +1,58 @@
+﻿@model IEnumerable<WEB.Models.ImageModel>
+
+<hr />
+<br />
+
+<h4>Мои изображения</h4>
+
+<div id="change" style="width:220px"></div>
+<div id="changefail" style="width:220px"></div>
+<div id="loading" style="display:none;color:red;font-size:x-large">Идет загрузка...</div>
+
+@if (Model != null)
+{
+    foreach (var item in Model)
+    {
+        <ul class="thumbnails">
+            <li class="span4">
+                <a href="#" class="thumbnail">
+                    <img src="data:image/@item.MimeType;base64,@Convert.ToBase64String(item.Image)" />"
+                </a>
+            </li>
+        </ul>
+@Html.ActionLink("Delete", "DeleteImage", "Cabinet", new { id = item.Id,lotid = item.LotId }, new { @class = "btn btn-success btn-block" })
+    <br />
+    <br />
+    }
+}
+else
+{ <h4>Image not found</h4>}
+
+
+@using (Html.BeginForm("AddImage", "Cabinet", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="form-horizontal">
+        <input type="hidden" name="Id" value=@ViewBag.LotsId />
+
+        <div>
+            Upload new image:
+            <input type="file" name="Load" />
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" name="Load" value="Add" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+
+<br />
+
+@Html.ActionLink("Back to list my lots","ListAllLotNames", "Cabinet")
+
+<br />
+<br />
+<br />

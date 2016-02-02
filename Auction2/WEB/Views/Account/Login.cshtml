@@ -1,0 +1,46 @@
+﻿@model WEB.Models.LoginModel
+
+@{
+    ViewBag.Title = "Login";
+    }
+
+<h3>Sign in</h3>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="form-horizontal">
+
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Name, new { @class = "control-label col-md-2  glyphicon glyphicon-user" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Name)
+                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger " })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Password, new { @class = "control-label col-md-2 glyphicon glyphicon-lock" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Password)
+                @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Role, new { @class = "control-label col-md-2  glyphicon glyphicon-registration-mark" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.Role,new SelectList(@ViewBag.Roles), string.Empty)
+                @Html.ValidationMessageFor(model => model.Role, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <button type="submit" value="Enter" style="width:100px" class="btn btn-success btn-block"><i class="glyphicon glyphicon-ok"></i> Submit</button>
+            </div>
+        </div>
+    </div>
+
+}

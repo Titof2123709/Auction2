@@ -1,0 +1,109 @@
+﻿@model WEB.Models.LotModel
+
+@{
+    ViewBag.Title = "ShowLot";
+}
+
+<h2>ShowLot</h2>
+
+<div>
+    <h4>LotModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StartPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StartPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Image)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Image)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateBegin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateBegin)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TimeBegin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TimeBegin)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Cathegory)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cathegory)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Statys)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Statys)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.BuyerName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BuyerName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EndPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EndPrice)
+        </dd>
+
+    </dl>
+</div>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <form method="post" action="/Cabinet/GetLot">
+
+                @Html.HiddenFor(model => model.Name)
+                @Html.HiddenFor(model => model.Description)
+                @Html.HiddenFor(model => model.StartPrice)
+                @Html.HiddenFor(model => model.DateBegin)
+                @Html.HiddenFor(model => model.TimeBegin)
+                @Html.HiddenFor(model => model.Statys)
+                @Html.HiddenFor(model => model.EndPrice)
+                @Html.HiddenFor(model => model.Id)
+                <input type="submit" name="Edit" value="Edit" class="btn btn-default" />
+                <input type="submit" name="Delete" value="Delete" class="btn btn-default" />
+            </form>
+        </div>
+    </div>
+
+     @Html.Action("GetImage", "Cabinet", new { Id = Model.Id})

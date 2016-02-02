@@ -1,0 +1,31 @@
+﻿@model WEB.Models.ImageModel
+
+<p>
+    @{
+        ViewBag.Title = "ImageLoad";
+    }
+
+    <h2>ImageLoad</h2>
+
+    @using (Html.BeginForm("ImageLoad", "Cabinet", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-horizontal">
+            <input type="hidden" name="Id" value=@ViewBag.LotId />
+
+                <!--Html.Action("GetImage", "Cabinet", new { Id = ViewBag.LotId })-->
+
+            <div>
+                Upload new image:
+                <input type="file" name="LoadImage" />
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" name="Load" value="Create" class="btn btn-default" />
+                </div>
+            </div>
+        </div>
+    }
+
+</p>
