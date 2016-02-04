@@ -20,31 +20,36 @@
             <div style="margin-left:220px">
                <h2>@ViewBag.Empty</h2>
 
-                    <!--Body content-->
-
-                    @foreach (var model in Model)
+                    @foreach (var mode in Model)
                     {
-                        <div class="col-xs-1" style="width:200px">
-                            <br />
-                            @Html.ActionLink(model.Name, "RedirectToChat", new { model.Name })
-                            @Html.DisplayNameFor(mod => model.Name)
-                            @Html.DisplayFor(mod => model.Name)
-                            <br />
-                            @Html.DisplayNameFor(mod => model.Description)
-                            @Html.DisplayFor(mod => model.Description)
-                            <br />
-                            @Html.DisplayNameFor(mod => model.StartPrice)
-                            @Html.DisplayFor(mod => model.StartPrice)
-                            <br />
-                            @Html.DisplayNameFor(mod => model.Image)
-                            @Html.DisplayFor(mod => model.Image)
-                            <br />
-                            @Html.DisplayNameFor(mod => model.DateBegin)
-                            @Html.DisplayFor(mod => model.DateBegin)
-                            <br />
-                            @Html.DisplayNameFor(mod => model.TimeBegin)
-                            @Html.DisplayFor(mod => model.TimeBegin)
-                            <br />
+                        <div class="col-xs-1" style="width:200px;">
+
+                                    <div class="thumbnail">
+                                        <p>
+                                            @if (mode.Image != null)
+                                            {                    
+                                                <img src="data:image/@mode.Image.MimeType;base64,@Convert.ToBase64String(mode.Image.Image)" class="img-thumbnail" />
+                                            }
+                                            else
+                                            {
+                                                <a href="#"><span class=" glyphicon glyphicon-picture img-thumbnail"></span>NotFound</a>
+                                            }
+                                                <h3>@Html.ActionLink(mode.Name, "Chat", "Auction", new { mode.Name },null)</h3>
+                                           
+                                        </p>
+                                        <p>
+                                            @Html.DisplayNameFor(mod => mode.StartPrice)
+                                            @Html.DisplayFor(mod => mode.StartPrice)
+                                        </p>
+                                        <p>
+                                            @Html.DisplayNameFor(mod => mode.DateBegin)
+                                            @Html.DisplayFor(mod => mode.DateBegin)
+                                        </p>
+                                        <p>
+                                            @Html.DisplayNameFor(mod => mode.TimeBegin)
+                                            @Html.DisplayFor(mod => mode.TimeBegin)
+                                        </p>
+                                    </div>
                         </div>
                     }
             </div>

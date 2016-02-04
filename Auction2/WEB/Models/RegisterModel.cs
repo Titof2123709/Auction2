@@ -6,8 +6,6 @@ using System.Web;
 
 namespace WEB.Models
 {
-    //О атрибутах!!
-    //http://andrey.moveax.ru/post/mvc3-in-depth-data-validation-02-standard-attributes
     public class RegisterModel
     {
         [Required(ErrorMessage ="Введите имя")]
@@ -27,9 +25,6 @@ namespace WEB.Models
         [EmailAddress(ErrorMessage = "Invalid Email Address")]
         [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
-
-        [Required(ErrorMessage = "Выберите роль")]
-        public string Role { get; set; }
 
     }
 }

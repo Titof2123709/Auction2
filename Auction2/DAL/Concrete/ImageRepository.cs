@@ -62,5 +62,11 @@ namespace DAL.Concrete
         {
             context.Set<OrmImage>().Where(dbimage=>dbimage.Id==Id).Delete();
         }
+
+
+        public DalImage GetFirstImageByLotId(int Id)
+        {
+            return Maper.ToDalImage(context.Set<OrmImage>().FirstOrDefault(im=>im.OrmLotId==Id));
+        }
     }
 }

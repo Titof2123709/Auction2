@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BLL.Interface.BLLModel;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -33,7 +34,7 @@ namespace WEB.Models
         [Display(Prompt = "$")]
         public double EndPrice { get; set; }
 
-        public string Image { get; set; }
+        public ImageModel Image { get; set; }
 
         [Required(ErrorMessage = "Введите дату")]
         [DataType(DataType.Date, ErrorMessage = "Неверный формат даты: YYYY-MM-DD")]

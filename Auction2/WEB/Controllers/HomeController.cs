@@ -43,10 +43,6 @@ namespace WEB.Controllers
         {
             return RedirectToAction("Index", "Admin");
         }
-        public ActionResult RedirectToChat()
-        {
-            return RedirectToAction("Chat", "Auction");
-        }
 
         //[ClaimsAuthorize(ClaimTypes.Role,"User,Admin")]
         [HttpGet]
@@ -64,7 +60,9 @@ namespace WEB.Controllers
                 ViewBag.Name = name;
             }
             if (lots.FirstOrDefault() == null) ViewBag.Empty = "Lots Not Found";
-            return View(lots.Select(lot=>Maper.ToLotModel(lot)).ToPagedList((page ?? 1), 5));
+            var lotmodels = lots.Select(lot=>Maper.ToLotModel(lot));
+            lotmodels = lotmodels.Select(lotmodel => { lotmodel.Image = Maper.ToImageModel(mainservice.GetFirstImageByLotId(lotmodel.Id)); return lotmodel; });
+            return View(lotmodels.ToPagedList((page ?? 1), 5));
         }
 
         public ActionResult GetAllCathegories()

@@ -12,6 +12,7 @@ namespace WEB.App_Start
     using Ninject.Web.Common;
     using BLL.Interface.Services;
     using WEB.Infrastuctura;
+    using WEB.Classes;
 
     public static class NinjectWebCommon 
     {
@@ -63,6 +64,7 @@ namespace WEB.App_Start
         /// <param name="kernel">The kernel.</param>
         private static void RegisterServices(IKernel kernel)
         {
+            kernel.Bind<IClaimsAutorization>().To<ClaimsAutorization>();
             System.Web.Mvc.DependencyResolver.SetResolver(new NinjectDependencyResolver(kernel));
         }        
     }

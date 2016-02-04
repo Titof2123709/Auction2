@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BLL.BllMappers;
+using BLL.Interface.BLLModel;
 
 namespace BLL.Services
 {
@@ -17,12 +18,14 @@ namespace BLL.Services
         private readonly IUnitOfWork uow;
         private readonly ILotRepository lotRepository;
         private readonly ICathegoryRepository cathegoryRepository;
+        private readonly IImageRepository imageRepository;
 
-        public MainService(IUnitOfWork uow, ILotRepository lotrepository, ICathegoryRepository cathegoryRepository)
+        public MainService(IUnitOfWork uow, ILotRepository lotrepository, ICathegoryRepository cathegoryRepository, IImageRepository imageRepository)
         {
             this.uow = uow;
             this.lotRepository = lotrepository;
             this.cathegoryRepository = cathegoryRepository;
+            this.imageRepository = imageRepository;
         }
         public IEnumerable<BllLot> FindAllExposeLots()
         {
@@ -42,6 +45,12 @@ namespace BLL.Services
         public IEnumerable<BllLot> FindLotByName(string name)
         {
            return lotRepository.GetLotsByName(name).Select(lot=>Maper.ToBllLot(lot));
+        }
+
+
+        public BllImage GetFirstImageByLotId(int Id)
+        {
+            return Maper.ToBllImage(imageRepository.GetFirstImageByLotId(Id));
         }
     }
 }

@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -84,6 +85,7 @@ namespace ORM
             db.Set<OrmProfile>().Add(new OrmProfile() { City = "Gomel", Id = 3, Address = "Kazintsa", OrmCountryId  = 1, Phone = 2788709, Receiver = "Grotov" });
             db.Set<OrmProfile>().Add(new OrmProfile() { City = "Tambov", Id = 4, Address = "Moskovska", OrmCountryId  = 2, Phone = 1323489, Receiver = "Denisv" });
 
+
             db.Set<OrmLot>().Add(new OrmLot 
             {
                 OrmUserId =1,
@@ -103,7 +105,7 @@ namespace ORM
                 TimeBegin = DateTime.Now,
                 OrmStatysId = 2,
                 StartPrice = 20,
-                Name = "Termos",
+                Name = "LapTop",
                 EndPrice = 0,
                 Description = "Metal body",
                 DateBegin = DateTime.Now,
@@ -116,9 +118,9 @@ namespace ORM
                 TimeBegin = DateTime.Now,
                 OrmStatysId = 2,
                 StartPrice = 20,
-                Name = "Table",
+                Name = "hedgehog",
                 EndPrice = 0,
-                Description = "Wood and big",
+                Description = "beautifull animal",
                 DateBegin = DateTime.Now,
                 OrmCathegoryId = 5,
                 BuyerName = "titof"
@@ -179,9 +181,6 @@ namespace ORM
             });
 
 
-
-
-
             db.Set<OrmLot>().Add(new OrmLot
             {
                 OrmUserId = 3,
@@ -223,6 +222,35 @@ namespace ORM
                 OrmCathegoryId = 5,
                 BuyerName = "titof"
             });
+
+            db.SaveChanges();
+
+            List<string> pathes = new List<string>();
+
+            pathes.Add(AppDomain.CurrentDomain.BaseDirectory + "\\fonts\\SonyWallpaper.jpg");
+            pathes.Add(AppDomain.CurrentDomain.BaseDirectory + "\\fonts\\SonyVAIO.jpg");
+            pathes.Add(AppDomain.CurrentDomain.BaseDirectory + "\\fonts\\hedgehog.jpg");
+            pathes.Add(AppDomain.CurrentDomain.BaseDirectory + "\\fonts\\IceAge3.jpg");
+
+            int i = 1;
+            foreach (var path in pathes)
+            {
+                using (FileStream fStream = new FileStream(path, FileMode.Open, FileAccess.Read))
+                {
+                    Byte[] imageBytes = new byte[fStream.Length];
+                    fStream.Read(imageBytes, 0, imageBytes.Length);
+
+                    db.Set<OrmImage>().Add(new OrmImage()
+                    {
+                        MimeType = "image"+"/jpeg",
+                        Image = imageBytes,  
+                        OrmLotId = i
+                    });
+                    db.SaveChanges();
+                };
+                
+                i++;
+            }
 
             base.Seed(db);
             db.SaveChanges();

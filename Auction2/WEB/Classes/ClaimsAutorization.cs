@@ -8,10 +8,7 @@ using WEB.Models;
 
 namespace WEB.Classes
 {
-   public interface IClaimsAutorization
-   {
-       void Autorization(LoginModel model,int id);
-   }
+
 
     public class ClaimsAutorization : IClaimsAutorization
     {

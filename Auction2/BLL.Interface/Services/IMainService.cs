@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BLL.Interface.BLLModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,5 +13,6 @@ namespace BLL.Interface.Services
         IEnumerable<BllLot> FindLotsByCathegoryNameAndStatysInProcess(string name);
         IEnumerable<string> GetAllNames();
         IEnumerable<BllLot> FindLotByName(string name);
+        BllImage GetFirstImageByLotId(int Id);
     }
 }

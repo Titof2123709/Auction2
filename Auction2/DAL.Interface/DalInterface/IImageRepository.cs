@@ -11,5 +11,6 @@ namespace DAL.Interface.DalInterface
     {
         IEnumerable<DalImage> GetImagesByLotId(int id);
         void Delete(int Id);
+        DalImage GetFirstImageByLotId(int Id);
     }
 }

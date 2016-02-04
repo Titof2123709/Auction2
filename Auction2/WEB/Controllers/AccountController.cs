@@ -15,16 +15,19 @@ using System.Security.Claims;
 using WEB.WebMappers;
 using System.Threading;
 using WEB.Classes;
+using Ninject;
 
 namespace WEB.Controllers
 {
     public class AccountController : Controller
     {
         private readonly IAccountService accountservice;
+        private readonly IClaimsAutorization authenticate;
 
-        public AccountController(IAccountService accountservice)
+        public AccountController(IAccountService accountservice, IClaimsAutorization authenticate)
         {
             this.accountservice = accountservice;
+            this.authenticate = authenticate;
         }
 
 
@@ -35,10 +38,8 @@ namespace WEB.Controllers
                 return HttpContext.GetOwinContext().Authentication;
             }
         }
-        private IClaimsAutorization Authenticate
-        {
-            get { return new ClaimsAutorization(); }
-        }
+
+
         private ClaimsPrincipal Identiti
         {
             get
@@ -51,7 +52,7 @@ namespace WEB.Controllers
         [ChildActionOnly]
         public ActionResult Nikneim()
         {
-            if (User.Identity.IsAuthenticated) return Content(Identiti.Identity.Name + "(" + Identiti.Identity.GetUserRole() + ")");
+            if (Identiti.Identity.IsAuthenticated) return Content(Identiti.Identity.Name + "(" + Identiti.Identity.GetUserRole() + ")");
             return Content("Anonymous");
         }
 
@@ -74,7 +75,7 @@ namespace WEB.Controllers
                     bool isrole = accountservice.CheckUserForRole(model.Name,model.Role);
                     if (isrole && Crypto.VerifyHashedPassword(user.Password, model.Password))
                     {
-                        Authenticate.Autorization(model, user.Id);
+                        authenticate.Autorization(model, user.Id);
                         return RedirectToAction("Index", "Home");
                     }
                 }

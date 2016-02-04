@@ -142,8 +142,7 @@ namespace WEB.Controllers
 
         public ActionResult UserRoles(int id)
         {
-            int Id = Convert.ToInt32(id);
-            ViewBag.UserId = Id;
+            ViewBag.UserId = id;
             return View();
         }
 

@@ -258,6 +258,7 @@
     <Compile Include="App_Start\Startup.cs" />
     <Compile Include="Attribute\ButtonAttribute.cs" />
     <Compile Include="Classes\ClaimsAutorization.cs" />
+    <Compile Include="Classes\IClaimsAutorization.cs" />
     <Compile Include="Classes\Image.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
